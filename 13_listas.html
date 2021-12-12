@@ -1,0 +1,80 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de título da base</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+
+    <style>
+      
+            
+        li ul{
+            height: 0;
+            overflow: hidden;
+            color: black;
+            transition: height  0.6s;
+            transition: color 0.6s;
+            
+        }
+        li:hover{
+            background-color: #ccc;
+
+        }
+
+        li:hover ul{
+            height: 50px;
+            color: chartreuse;
+           
+
+            
+        }
+
+       
+
+    </style>
+
+
+
+
+
+    <body>
+            <ul>
+                <li>item1</li>
+                <li>item2
+                    <ul>
+                        <li>item2.1</li>
+                        <li >item2.2</li>
+                    </ul>
+                <li>item3</li>
+            </li>
+            </ul>
+
+            <dl>
+                <dt>exemplo de item a ser detalhado</dt>
+                <dd>detalhamento</dd>
+                <dt>outro item detalhado</dt>
+                <dd>outor detalhamento</dd>
+            </dl>
+
+            <dl>
+                <dt>titulo1</dt>
+                <dd>detalhe</dd>
+                <dd>detalhe2</dd>
+                <dd>detalhe3</dd>
+
+                <dt>titulo2</dt>
+                <dt>titulo3</dt>
+                <dt>titulo4</dt>
+                <dd>detalhe 2, 3, 4.</dd>
+            </dl>
+            
+
+
+</body>
+</html>

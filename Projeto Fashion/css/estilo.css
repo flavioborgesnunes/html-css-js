@@ -1,0 +1,153 @@
+body{
+    
+    font-family: tahoma, arial, sans-serif;
+    margin: 1024;
+    padding: 0;
+}
+
+
+header{
+    position: relative;
+    width: 1024px;
+    margin:auto;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.faixa{
+    height: 50px;
+    width: 1024px;
+    background-color: rgb(69, 69, 98);
+    position: absolute;
+    top: 0px;
+}
+header nav{
+    
+    height: 100%;
+    
+    
+}
+
+
+ul{
+
+   
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: color .5s linear;
+
+}
+a:hover{
+    color: rgb(24, 22, 21);
+}
+
+h1{
+   color: #252525;
+    width: 750px;;
+    margin: 50px auto;
+    text-align: center;
+}
+.primeiro{
+    color: ;
+    width: 850px;
+    margin:auto;
+    text-align:center;
+    line-height: 1.5 ;
+
+}
+.modelos{
+    height: 280px;
+    margin: 50px,0;
+    width: 785px;
+    margin: auto;
+    padding: 50px;
+}
+.modelo1{
+    width: 250;
+    height: 192;
+    display: inline-block;
+
+}
+.modelo2{
+    display: inline-block;
+    margin-left: 10px;
+}
+.modelo3{
+    display: inline-block;
+    margin-left: 10px;
+}
+p{
+    text-align: center;
+    color: #252525;
+}
+.azul{
+        background-color: #003d52;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 800px;
+    padding: 80px;
+    margin: auto;
+
+}
+.azul p{
+    color: black;
+    text-align: left;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size:36px;
+    text-align: left;
+    color: white;
+}
+
+address{
+    width: 500px;
+    height: 200px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    margin: auto;
+}
+
+.maps{
+    
+    width: 800px;
+    height: 450;
+    margin: auto;
+    position: relative;
+    left: -70px;
+    
+}
+.maps iframe{
+    
+  
+}
+    
+
+footer{
+    width: 850px;
+    background-color: rgb(29, 37, 29);
+    height:25x;
+    padding: 40px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    color: green;
+}
+
