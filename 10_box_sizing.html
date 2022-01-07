@@ -1,0 +1,49 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de título da base</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+
+
+    <style>
+        div{
+            background-color: orange;
+            width: 150px;
+            height:100px;
+            margin:10px;
+            border-bottom: green;
+            border-style: double;
+            border-width: 10px;
+           
+
+          
+
+        }
+        #div1{
+            padding: 25px;/* a diferença é que quando aumenta o padding, a borda aumenta no caso normal, se tiver BORDER BOX o texto vai para o centro e a borda não altera*/
+            
+        }
+        #div2{
+            padding:25px;
+           
+            box-sizing: border-box;/* trava ço whidth e o height no tamanho estipulado, o padding vai pra dentro jogando o texto mais pra dentro*/
+        }
+
+
+    </style>
+    <body>
+            <h1>Box-Sizing</h1>
+            <div id="div1">teste 1</div>
+            <div id="div2">teste 2</div>
+            
+
+
+</body>
+</html>

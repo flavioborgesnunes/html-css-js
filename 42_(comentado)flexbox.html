@@ -1,0 +1,170 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> flexbox</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+        <style>
+            .flexbox{
+                height: 250px;
+                border: 1px solid red;
+                display: flex; 
+                margin-bottom: 15px;         
+            }
+
+            .flexbox div{
+                background: orange;
+                width: 150px;
+                margin: 15px;
+                     
+            }
+
+            .flexbox:nth-child(4){
+                    /*flex-direction: row;
+                    flex-wrap: wrap;*/
+                /*une os elementos flex-direction e flex-wrap*/
+                flex-flow: row nowrap;
+            }
+           
+            .flexbox:nth-child(5){
+                justify-content:space-between;
+                /*espace around divi o espaço exedente entre os elemento, espace between faz o mesmo mas não preeche os espaços das extremidades*/
+
+            }
+            .flexbox:nth-child(5) div{
+                width: 40px;
+            }
+            .flexbox:nth-child(6){
+                
+                align-items: center;
+                /*alinha na vertical*/
+                justify-content: center;
+                /*alinha na horizontal*/
+
+            }
+            .flexbox:nth-child(6) div{
+                width: 40px;
+            }
+            .flexbox:nth-child(7){
+                
+                align-items: center;
+                /*alinha na vertical*/
+                justify-content: center;
+                /*alinha na horizontal*/
+                flex-wrap: wrap;
+                /*quebra a linha*/
+                align-content: flex-start;
+                /*alinha sempre que houver mais de uma linha( se não houver o wrap nada acontece*/
+
+
+            }
+            .flexbox:nth-child(8){
+                justify-content: center;
+                align-items: center;
+
+            }
+            .flexbox:nth-child(8) div{
+                background: yellow;
+                flex-basis: 50px;/*o mesmo que a largura*/
+                height: 50px;
+            }
+            .flexbox:nth-child(9){
+                justify-content: center;
+                align-items: center;
+
+            }
+            .flexbox:nth-child(9) div{
+                background: blue;
+                flex-basis: 50px;/*o mesmo que a largura*/
+                height: 50px;
+            }
+            .flexbox:nth-child(9) div:nth-child(2){
+                flex-grow: 2;/*distribui o elemento ocupando toda area vazia o numero de vezes indicado no caso 2 = 1do debaixo ou seja 3*/
+            }
+            .flexbox:nth-child(9) div:nth-child(4){
+                flex-grow: 1;
+            }
+            .flexbox:nth-child(10) div{
+                background: rgb(107, 107, 126);
+                flex-basis: 400px;/*o mesmo que a largura*/
+                height: 50px;
+            }
+            .flexbox:nth-child(10) div:nth-child(2){
+                flex-shrink: 2;
+            }
+            .flexbox:nth-child(10) div:nth-child(4){
+                flex-shrink: 2;/*o contrário do flex grow, quando a tela diminui ele desconta do elemento atribuido com shrink*/
+                /*flex: 1 0 100%; */               
+                /*grow shrink e basis*/
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+            <h2>flexbox</h2>
+            <p>acomoda ou distribuir elementos de modo fácil</p>
+            <p>ajuda a centralizar na vertical</p>
+            
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+            <div class="flexbox">
+                <div class=div1>1</div>
+                <div class=div2>2</div>
+                <div class=div3>3</div>
+                <div class=div4>4</div>
+                
+            </div>
+
+
+</body>
+</html>

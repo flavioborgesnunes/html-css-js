@@ -1,0 +1,120 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de Formulário</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+
+
+
+
+    
+    <body>
+            <h1>Exemplo de Formulario</h1>
+
+            <form action=""  method="post" class="formlogin">
+                <fieldset>
+                    <legend>Dados Pesoais</legend>
+                    <!--maxlength limita os caracteres/ placeholder apresena um texto no espaço a ser preenchido-->
+                    <lable>email</lable>
+                    <input type="email" required maxlength="15" placeholder="digite um email válido"></imput> 
+                    <!--required torna obrigatório para enviar-->
+                    <br><br><br>
+
+                    <lable>numero de filhos</lable>
+                    <input type="number"min="0" max="10" step=".5">
+                    <br><br>
+
+                    <label>Data de nascimento</label>
+                    <input type="date" min="1985-02-28" max="2021-12-07">
+
+
+                    <p>Sexo</p>
+                    <label>masculino
+                    <input type="radio" name="sexo" value="m">
+                </label> 
+                    <!--para que selecione clicando no nome coloque o input dentro do label(forma fácil).-->
+                    <label for="fem">feminino</label>
+                    <input type="radio" name="sexo"value="f" id="fem">
+                    <!--ou use o atributo for e uma id para relacionar o input e o label-->
+                    <br>
+
+                    <label>Estado</label>
+                    <select name="estado">
+                            <option value="0">selecione</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="rj">Rio de Janeiro</option>
+                    </select>
+                    <!--menu com opções-->
+                </fieldset>
+                    <br>
+
+                <fieldset>
+                    <legend>Área de Intersse</legend>
+
+                    <label><input type="checkbox"name="html" value="html">HTML</label>
+
+                    <label><input type="checkbox"name="css" value="css">CSS</label>
+
+                    <label><input type="checkbox"name="java" value="java">Javascript</label>
+
+                </fieldset>  
+
+            <fieldset>
+                <legend>Mensageme</legend>
+                <!--style=resize:none é para que não se possa alterar o tamnho do box do texto-->
+                <textarea style="resize:none" name="msg" cols="30" rows="10"></textarea>
+                <legend>contrato</legend>
+                <!-- readonli (somente letitura) serve para que não se altere a mensagem da caixa, pode ser usado da mesma forma "diabled"-->
+                <textarea style="resize:none" name="msg" cols="30" rows="10" readonly>Aqui entra o texto do contrato que precisa ser aceito
+
+                </textarea>
+                <label><input type="checkbox">Li e Aceito</label>
+                <input type="hidden"value="x" name="hidden">
+                <!--hidden informação oculta ao usuário-->
+
+                <input type="range" min="0" max="12" step="3">
+                <!--range barra ajustável.. step( de quanto em quento o range "pula")-->
+                <input type="time">
+                <input type="color">
+
+                <select multiple><!--multiple faz com que possa acessar mais de uma opção( apertando control no browser obs: a lista fiica aberta)-->
+                    <option> opção 1</option>
+                    <option> opção 2</option>
+                    <option> opção 3</option>
+                    <option> opção 4</option>
+                </select>
+
+
+            </fieldset>
+                    
+
+                    
+               
+
+
+
+                <input type="submit" value="mandar"name="login">
+                <input type="button" value="button"name="button">
+                <input type="reset" value="limpar"name="reset">
+                
+
+                
+
+
+                
+            
+                
+
+            </form>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de Formulário</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+
+    <style>
+.formlogin{
+    width: 250px;
+    margin: 50px auto 0;
+    font-family: sans-serif;
+    
+}
+.formlogin fieldset{
+    background-color: green;
+}
+.formlogin legend{
+    background-color: rgb(54, 12, 160);
+    display: inline-block;
+    padding: 10px;
+}
+.formlogin label{
+    margin-top: 25px;
+    display: block;
+    margin-bottom:5px ;
+}
+
+#user, #pass, .btn{
+
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+
+
+}
+#user,  #pass{
+    background-color: yellow;
+}
+
+#user:focus,  #pass:focus{
+    background-color: red;
+
+}
+.btn{
+    margin-top: 15px;
+}
+
+    </style>
+
+
+    
+    <body>
+            <h1>Exemplo de Formulario</h1>
+
+            <form action=""  method="post" class="formlogin">
+                <fieldset>
+                    <legend>login</legend>
+
+                    <label for="user">Digite o seu usuário</label>
+                    <input type="text" id="user" name="user" autofocus>
+
+                    <label for="pass">Digite a enha</label>
+                    <input type="password" id="pass" name="pass">
+
+                    <input type="submit" value="logar" class="btn">
+
+
+
+                </fieldset>
+            
+                
+
+            </form>
+
+
+</body>
+</html>

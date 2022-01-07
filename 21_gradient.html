@@ -1,0 +1,73 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> CSS.EFEITOS</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+<STYLE>
+    html, body{
+        height: 100%;
+    }
+
+body{
+        background-image: linear-gradient(to left top, red, blue);
+        /* preciso de uma direção e uma cor. posso trabalhar comuma imagem, */
+
+    }
+
+
+
+
+
+    
+#radius{
+    background-color: orange;
+    width: 200px;
+    height:200px; 
+    margin: 50px auto;
+    border-radius:50px 100px  / 100px 50px  ;  
+    /*50% (apenas) gera circulo pesfeito/ antes da barra eixo x depois da barra eico y*/
+
+    box-shadow: 10px 20px 10px 5px black;
+    /* x, y, esfumaçamento, aumento da sombra em relação à imagem(opcional) cor, (pode-se fazer mais de uma sombra) */
+
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-shadow:-1px -1px 0 #5d5d5d, -2px -2px 0 #828181,-3px -3px 0 #afaeae;
+
+
+
+    /*mesmas propriedades do box shadow menos o aumento da sombra*/
+}
+
+
+
+
+
+
+
+
+
+
+</STYLE>
+
+    <body>
+            <h1>css-efeitos</h1>
+            <div id="radius">
+
+            </div>
+            
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Tabelas (Table)</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            font-size: 30px;
+            
+        }
+        }
+        caption{
+            font-size: 22px;
+            font-style: oblique;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: yellow;
+            
+        }
+        thead{
+            text-align: center;
+            background-color: tomato;
+            width: 80%;
+            margin: auto;
+        }
+        td{
+            border:2px solid black;
+            padding: 10px;
+        }
+        tfoot{
+            background-color: violet;
+        }
+        th{
+            border: 2px solid rgb(184, 117, 117);
+        }
+            
+    </style>
+    <body>
+        <table>
+            <caption>Tabela de Preço de Cursos</caption>
+
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+
+            </thead>
+
+            <tfoot>
+                <td colspan="3">preços sujeitos a alteração sem prévio aviso</td>
+
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Photoshp</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Ilustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Desenvolvimento</td>
+                    <td>CSS</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>Javascrpt</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Java</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Turbo C+</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+
+
+
+            </tbody>
+
+            
+        </table>    
+
+
+</body>
+</html>
