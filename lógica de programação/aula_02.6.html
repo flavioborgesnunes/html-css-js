@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Lógica de programação JavaScript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Jogo dos Números</h1>
+</body>
+
+<script>
+     n1 = prompt ("Jogador 1 digite um número :");
+     var n1 = parseInt (n1);
+
+     n2 = prompt ("Jogador 2 digite um numero :");
+     var n2 = parseInt (n2);
+
+     var random = parseInt (Math.random() *2);
+  
+     
+
+     if (n1 == n2){
+         
+         if (n1 == 2){
+            alert ("As lésbicas venceram")
+
+         }
+         else{
+            alert ("Os jogadores Empataram");
+         }
+
+     }
+     else if (random == 0){
+         if (n2 > n1){
+                alert(" Ganhava quem tirou menos: Jogador 1 venceu" );
+         }
+         else{
+            alert(" Ganhava quem tirou menos: Jogador 2 venceu" );
+         }
+         
+     }
+     else {
+         if (n1 > n2){
+            alert("Ganhava quem tirou mais: Jogador 1 venceu" );
+         }
+            else{
+            alert(" Ganhava quem tirou mais: Jogador 2 venceu" )
+
+
+         }
+     }
+
+  
+
+
+</script>
+
+</html>

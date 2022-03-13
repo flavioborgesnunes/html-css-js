@@ -1,0 +1,12 @@
+body{
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+    color:black;
+}
+a:after{
+    content:"( "attr(href) " )";
+    /*os parenteses e as aspas são textos, o attr(href) mostra o texto na hora da impressão*/
+    display: inline-block;
+    margin: 0 10px;
+}

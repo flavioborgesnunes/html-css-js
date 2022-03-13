@@ -1,0 +1,36 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de título da base</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+    </head>
+    
+    
+    <script>
+        
+       
+        function resposta(){
+            //  var n1 = document.getElementsById("num1").value;
+            
+          
+            alert( parseFloat(num1.value));
+           
+
+            document.getElementsById("resultado").innerHTML = num1.value;
+        }
+       
+  
+
+    </script>
+     <body>
+        <input type="number" id="num1" placeholder="digite um numero">
+        <button onclick="resposta()"> ok </button>
+        <div id="resultado"></div>
+    </body>
+</html>

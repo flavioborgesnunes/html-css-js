@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Tabuada</title>
+        <meta charset="utf-8">
+        
+        <script>
+
+            function mostrar(){
+                var n = 0;
+                while( n <= 10){
+
+                x = document.getElementById('num1').value;
+                // alert( x * n );
+                var resultado = x * n;
+                document.querySelectorAll('#div1')[n].innerHTML = x + 'x' + n + ' = ' + resultado ;
+                n++;
+            }}
+           
+        </script>
+         
+        
+    </head>
+    <body>
+        <h1>Curso Javascript </h1>
+        <input type="text" id="num1" placeholder="Digite um número">
+        <button onclick="mostrar()">OK</button>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div>
+        
+        
+         
+        
+    </body>
+</html>

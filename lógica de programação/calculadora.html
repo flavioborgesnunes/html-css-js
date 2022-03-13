@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Lógica de programação JavaScript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <button onclick="soma()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="div()">/</button>
+
+    <div id="output"></div>
+
+<script>
+    var n = prompt('digite um numero');
+    n = parseFloat (n);
+   
+    escreve();
+    function escreve(){
+        var output = document.querySelector ('#output');
+        output.innerHTML = n;
+    }
+
+    function soma(){
+        var ns = prompt ('digite outro número');
+        ns = parseFloat (ns);
+        n = n + ns;
+        escreve();
+    }
+    function sub(){
+        var ns = prompt ('digite outro número');
+        ns = parseFloat (ns);
+        n = n - ns;
+        escreve();
+    }
+    function mult(){
+        var ns = prompt ('digite outro número');
+        ns = parseFloat (ns);
+        n = n * ns;
+        escreve();
+    }
+    function div(){
+        var ns = prompt ('digite outro número');
+        ns = parseFloat (ns);
+        n = n / ns;
+        escreve();
+    }
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<!--doctype informa ao agente de usuário qual a versão do html deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Exemplo de título da base</title>
+        <meta charset="utf-8">
+        <!--(UTR-8 serve para caracteres como: ção, à, é, háetc.-->
+        <meta name="author" content="Fávio B. Nunes">
+        <meta name="description" content="curso programação">
+        <meta name="keywords"  contnent="html, tecnologia">
+
+        <style>
+           .gridContainer{
+               display: grid;
+               background:#ccc;
+               grid-template-columns: repeat(3, 1fr);
+               grid-template-rows: 2fr 1fr 7fr 2fr;
+               grid-gap: 7px 7px;
+           }
+            .gridItem{
+                background: orange;
+              
+                padding: 10px;
+                grid-gap: 10px;   
+            }
+            .gridItem:nth-child(1){
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+            .gridItem:nth-child(2){
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .gridItem:nth-child(3){
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .gridItem:nth-child(4){
+                grid-column-start: 3;
+                grid-column-end: -1;
+                grid-row-start: 2;
+                grid-row-end: -1;
+            }
+            .gridItem:nth-child(5){
+                background: rgba(255,0,0,.5);
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+                
+                
+           
+
+
+
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <div class="gridItem">header</div>
+            <div class="gridItem">nav</div>
+            <div class="gridItem">main</div>
+            <div class="gridItem">aside</div>
+            <div class="gridItem">footer</div>
+            
+        </div>
+        
+        
+    </body>
+</html>
